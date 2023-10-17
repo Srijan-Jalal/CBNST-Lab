@@ -13,7 +13,7 @@ double findc(double a,double b)
 
 int main()
 {
-    double a,b,e,c,x;
+    double a,b,e,c;
     int i=1,N;
     printf("Given Equation x^2+2sin(x)+cos(x)=0 \n");
     do 

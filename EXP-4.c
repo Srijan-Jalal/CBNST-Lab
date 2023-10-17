@@ -36,7 +36,7 @@ int main(void)
     do
     {
         x = c-(func(c)/fd(c));
-        printf("Iteration %d: %lf \n",i++,c);
+        printf("Iteration %d: %lf \n",i++,x);
         if(func(x)==0)
             break;
         else

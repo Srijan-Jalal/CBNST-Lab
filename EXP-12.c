@@ -9,20 +9,17 @@ int main(void)
     printf("Enter The No of Interval: ");
     scanf("%d",&n);
     float X[n+1],Y[n+1];
-    float b,a;
     printf("Enter the Lower Limit: ");
-    scanf("%f",&a);
+    scanf("%f",&X[0]);
     printf("Enter the Higher Limit: ");
-    scanf("%f",&b);
-    float h = (b-a)/n;
-    X[0] = a;
+    scanf("%f",&X[n]);
+    float h = (X[n]-X[0])/n;
     Y[0] = INTG_func(X[0]);
     for(int i=1;i<n;i++)
     {
-        X[i] = a+(i*h);
+        X[i] = X[i-1]+h;
         Y[i] = INTG_func(X[i]);
     }
-    X[n]=b;
     Y[n] = INTG_func(X[n]);
     float sum = (Y[0] + Y[n]);
     float Esum=0,Osum=0;

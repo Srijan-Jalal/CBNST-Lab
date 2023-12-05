@@ -3,8 +3,8 @@ float u_cal(float,int);
 int fact(int);
 int main(void)
 {
-    int i,j,n;
-    printf("Enter number of data: \n");
+    int i,j,n,val;
+    printf("Enter number of data: ");
     scanf("%d", &n);
     float x[n], y[n][n];
     printf("Enter data:\n");
@@ -31,7 +31,6 @@ int main(void)
         printf("\n");
     }
 
-    int val;
     printf("\nEnter The Interpollation point: ");
     scanf("%d",&val);
     float sum = y[n - 1][0];

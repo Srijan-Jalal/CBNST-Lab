@@ -10,7 +10,7 @@ double find_K(double x,double y,double h)
     double k2 = h * (DIFF_func(x+(h/2),y+(k1/2)));
     double k3 = h * (DIFF_func(x+(h/2),y+(k2/2)));
     double k4 = h * (DIFF_func(x+h,y+k3));
-    return (k1+2*(k2+k3)+k4)/6;
+    return (k1+(2*(k2+k3))+k4)/6;
 }
 
 int main(void)

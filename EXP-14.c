@@ -25,8 +25,8 @@ int main(void)
 	}
 	for(int i=0;i<n+1;i++)
 	{
-		printf("%lf \t\t %lf \n",X[i],Y[i]);
+		printf("%.4lf \t\t %.4lf \n",X[i],Y[i]);
 	}
-	printf("Value of Y at X=%lf is: %lf",X[n],Y[n]);
+	printf("Value of Y at X=%.4lf is: %.4lf",X[n],Y[n]);
 	return 0;
 }
